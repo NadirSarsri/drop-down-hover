@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Luxurious+Script&family=Poppins:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* @font-face {
+    font-family: "Aguafina Script";
+    src: url("../fonts/AguafinaScript-Regular.ttf");
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.navbar-items .navbar-item {
+  margin-right: 20px;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+  color: #777;
+}
+.navbar-item:hover {
+  color: rgb(94, 144, 252);
+  background-color: #e9e9e9;
+}
+.navbar-item:hover > .dropdown-content {
+  display: block;
+}
+.navbar-item:hover > .arrow {
+  border-color: rgb(94, 144, 252);
+  transform: rotate(225deg);
+  bottom: 0;
+}
+.navbar-item > .arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #777;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+  transition: 0.3s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 1;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.dropdown-content li a {
+  display: block;
+  background-color: #fafafa;
+  color: rgb(94, 144, 252);
+  text-decoration: none;
+  padding: 16px 20px;
+}
+
+.dropdown-content li a:hover {
+  text-decoration: underline;
+  background-color: #e9e9e9;
+}
